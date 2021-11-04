@@ -83,9 +83,9 @@ author:
   name             : "tal boger"
   avatar           : "profile.png"
   bio              : "undergraduate at yale researching perception and cognition"
-  location         : "new haven, ct"
+  location         : 
   employer         :
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=3sccrUYAAAAJ&hl=en"
   email            : tal.boger@yale.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : 
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
