@@ -2,7 +2,7 @@
 title: "Manipulating Causal Uncertainty in Sound Objects"
 collection: talks
 type: "Talk"
-permalink: /talks/BogerAnathabhotlaParadiso_AudioMostly_2021
+permalink: /talks/BogerAnanthabhotlaParadiso_AudioMostly_2021
 venue: "AudioMostly"
 date: 2021
 location: "Virtual"

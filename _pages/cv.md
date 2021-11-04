@@ -20,7 +20,7 @@ Research experience
 * [Northwestern University Visual Thinking Lab](http://visualthinking.psych.northwestern.edu/), Feb. 2020 - present. PI: Steve Franconeri
 * [Yale University Cognition and Development Lab](https://cogdevlab.yale.edu/), Sep. 2021 - present. PI: Frank Keil, also worked with Sami Yousif
 * [Yale University Action, Computation, & Thinking Lab](http://actcompthink.org/), Sep. 2021 - present. PI: Sam McDougle
-* [MIT Media Lab, Responsive Environments Group](https://resenv.media.mit.edu/), Jan. 2021 - Sep. 2021. PI: Joseph Paradiso, also worked with Ishwarya Anathabhotla
+* [MIT Media Lab, Responsive Environments Group](https://resenv.media.mit.edu/), Jan. 2021 - Sep. 2021. PI: Joseph Paradiso, also worked with Ishwarya Ananthabhotla
 
 Publications
 ======
