@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/BogerAnanthabhotlaParadiso_AudioMostly_2021
 venue: "AudioMostly"
-date: 2021
+date: 2021-01-04
 location: "Virtual"
 ---
 

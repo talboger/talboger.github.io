@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/BogerHafriFirestone_OPAM_2020
 venue: "Object Perception, visual Attention, and visual Memory"
-date: 2020
+date: 2020-01-01
 location: "Virtual"
 ---
 

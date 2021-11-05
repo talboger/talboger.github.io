@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/HafriBogerFirestone_VSS_2021
 venue: "Vision Sciences Society"
-date: 2021
+date: 2021-01-03
 location: "Virtual"
 ---
 
