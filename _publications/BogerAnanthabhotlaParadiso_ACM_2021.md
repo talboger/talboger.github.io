@@ -6,7 +6,7 @@ excerpt: 'This paper is about an optimization pipeline that manipulates the caus
 date: 2021-01-02
 venue: 'Proceedings of AudioMostly 2021 in the Association for computing Machinery'
 paperurl: 'http://academicpages.github.io/files/BogerAnathabhotlaParadiso_ACM_2021.pdf'
-citation: 'Boger, T., Ananthabhotla, I., and Paradiso, J. (2021). Manipulating Causal Uncertainty in Sound Objects. _Proceedings of AudioMostly 2021 in the Association for computing Machinery_.'
+citation: 'Boger, T., Ananthabhotla, I., and Paradiso, J. (2021). Manipulating Causal Uncertainty in Sound Objects. <i>Proceedings of AudioMostly 2021 in the Association for computing Machinery</i>.'
 ---
 This paper is about an optimization pipeline that manipulates the causal uncertainty of sound objects. It was presented at a long paper at _AudioMostly 2021_, which had its proceedings subsequently published in the _Association for Computing Machinery_.
 

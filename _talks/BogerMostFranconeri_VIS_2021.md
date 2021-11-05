@@ -8,6 +8,6 @@ date: 2021-01-05
 location: "Virtual"
 ---
 
-This talk accompanies a short paper that finds that inattentional blindness occurs when people perceive data visualizations. The paper was awarded "Best short paper" at IEEE VIS 2021.
+This talk accompanies a short paper that finds that inattentional blindness occurs when people perceive data visualizations. The paper was awarded "Best short paper" at _IEEE VIS 2021_.
 
 [Watch the talk here.](http://academicpages.github.io/files/BogerMostFranconeri_VIS_2021.mp4)
