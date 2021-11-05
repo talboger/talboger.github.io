@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/BogerMostFranconeri_VIS_2021
 venue: "IEEE Visualization Conference (VIS)"
-date: 2021-01-05
+date: 2021-10-26
 location: "Virtual"
 ---
 

@@ -4,7 +4,7 @@ collection: talks
 type: "Poster + walkthrough"
 permalink: /talks/BogerEpsteinGrohFirestone_VSS_2021
 venue: "Vision Sciences Society"
-date: 2021-01-02
+date: 2021-05-25
 location: "Virtual"
 ---
 
