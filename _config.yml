@@ -75,7 +75,7 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-QB73GQCRSY"
 
 
 # Site Author
@@ -83,7 +83,7 @@ author:
   name             : "tal boger"
   avatar           : "profile.png"
   bio              : "undergraduate at yale researching perception and cognition"
-  location         : 
+  location         :
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=3sccrUYAAAAJ&hl=en"

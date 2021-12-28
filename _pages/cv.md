@@ -34,6 +34,11 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
+Invited presentations
+=====
+* Harvard Vision Sciences Laboratory, 12/14/2021. Presentation: What is "where"?
+* DARPA Machine Common Sense grant weekly meeting, 10/6/2021. Presentation: What is "where"?
+
 Work and other experience
 =====
 
