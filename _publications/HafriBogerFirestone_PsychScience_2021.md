@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/HafriBogerFirestone_PsychScience_2021
 excerpt: 'This paper extends the phenomenon of representational momentum from position changes to state-changes. It is currently in press at <i>Psychological Science</i>.'
 date: 2021-01-01
-venue: 'Psychological Science'
+venue: 'Psychological Science (in press)'
 paperurl: 'http://talboger.github.io/files/HafriBogerFirestone_PsychScience_2021.pdf'
 citation: '*Hafri, A., *Boger, T. (co first-authors), & Firestone, C. (in press). Melting ice with your mind: Representational momentum
 for physical states. <i>Psychological Science</i>.'
