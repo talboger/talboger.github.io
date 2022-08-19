@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Publications & conference abstracts"
     url: /publications/
 
-  - title: "Talks & posters"
-    url: /talks/
+#  - title: "Talks & posters"
+#    url: /talks/
 
 #  - title: "Teaching"
 #    url: /teaching/
@@ -16,7 +16,7 @@ main:
 #    url: /year-archive/
 
   - title: "CV"
-    url: /cv/
+    url: https://talboger.github.io/files/Boger_CV.pdf
 
 #  - title: "Guide"
 #    url: /markdown/
