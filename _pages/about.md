@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am a senior undergraduate student at Yale University, where I study Statistics & Data Science. I'm interested in perception and cognition, and work with various researchers and labs in these fields, including [Chaz Firestone](https://perception.jhu.edu/chaz), [Tomer Ullman](https://www.tomerullman.org/), [Steven Franconeri](https://psychology.northwestern.edu/people/faculty/core/profiles/steven-franconeri.html), [Frank Keil](https://cogdevlab.yale.edu/people/faculty), and others. Specifically, I am interested in complexity, interactions between language and vision, intuitive physical reasoning, and more.
+I am a first-year Ph.D. student working with [Chaz Firestone](https://perception.jhu.edu/chaz) at the [Johns Hopkins University Department of Psychological & Brain Sciences](https://pbs.jhu.edu/). Broadly, I study visual perception and cognition; I'm especially interested in representations of complexity, style, and physical reasoning.
 
-In the fall of 2023, I will begin my Ph.D. with Chaz Firestone at Johns Hopkins.
+In 2023, I graduated from Yale University, where I studied Statistics & Data Science. During this time, I worked with several different researchers, including [Frank Keil (Yale)](https://cogdevlab.yale.edu/people/faculty), [Steven Franconeri (Northwestern)](https://psychology.northwestern.edu/people/faculty/core/profiles/steven-franconeri.html), and [Tomer Ullman (Harvard)](https://www.tomerullman.org/), among others.
 
 Beyond research, I love basketball (and have been a lifelong Celtics fan), stand-up comedy, and music.

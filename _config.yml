@@ -75,19 +75,19 @@ social:
 analytics:
   provider               :  "custom" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : 
+    tracking_id          :
 
 
 # Site Author
 author:
   name             : "tal boger"
   avatar           : "profile.png"
-  bio              : "undergraduate at yale researching perception and cognition"
+  bio              : "ph.d. student at johns hopkins researching perception and cognition"
   location         :
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=3sccrUYAAAAJ&hl=en"
-  email            : tal.boger@yale.edu
+  email            : tboger1@jhu.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

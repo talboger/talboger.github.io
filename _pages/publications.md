@@ -4,11 +4,12 @@ title: "Publications & conference abstracts"
 permalink: /publications/
 author_profile: true
 ---
-Publications and refereed conference proceedings
+Journal articles and refereed conference proceedings
 ======
 
-* **Boger, T.** & Ullman, T. (In press). What is "where": Physical reasoning informs object location. *Open Mind*. [[pdf](https://talboger.github.io/files/BogerUllman_OpenMind_In_Press.pdf)]
-* Hafri, A. \*, **Boger, T.** \*, & Firestone, C. (2022). Melting ice with your mind: Representational momentum for physical states. *Psychological Science*, 33(5), 725-735. [[pdf](https://talboger.github.io/files/HafriBogerFirestone_PsychScience_2022.pdf)] (\* co-first authors)
+* Li, Y., Wang, Y., **Boger, T.**, Smith, K. A., Gershman, S. J., & Ullman, T. D. (2023). An approximate representation of objects underlies physical reasoning. *Journal of Experimental Psychology: General*. [[pdf](https://talboger.github.io/files/Li_etal_JEPG_2023.pdf)]
+* **Boger, T.** & Ullman, T. (2023). What is "where": Physical reasoning informs object location. *Open Mind*, *7*, 130-140. [[pdf](https://talboger.github.io/files/BogerUllman_OpenMind_2023.pdf)]
+* Hafri, A. \*, **Boger, T.** \*, & Firestone, C. (2022). Melting ice with your mind: Representational momentum for physical states. *Psychological Science*, *33*(5), 725-735. [[pdf](https://talboger.github.io/files/HafriBogerFirestone_PsychScience_2022.pdf)] (\* co-first authors)
 * **Boger, T.**, Most, S. B., & Franconeri, S. L. (2021, October). Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen. In *2021 IEEE Visualization Conference (VIS)* (pp. 71-75). IEEE. [[pdf](https://talboger.github.io/files/BogerMostFranconeri_VIS_2021.pdf)] (**Won best short paper at IEEE VIS**)
 * **Boger, T.**, Ananthabhotla, I., & Paradiso, J. (2021). Manipulating causal uncertainty in sound objects. In *Audio Mostly 2021* (pp. 9-15). [[pdf](https://talboger.github.io/files/BogerAnanthabhotlaParadiso_ACM_2021.pdf)]
 
