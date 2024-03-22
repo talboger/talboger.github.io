@@ -1,12 +1,13 @@
 ---
 layout: archive
-title: "Publications & conference abstracts"
+title: ""
 permalink: /publications/
 author_profile: true
 ---
 Journal articles and refereed conference proceedings
 ======
 
+* **Boger, T.** & Franconeri, S. L. (In press). Reading a graph is like reading a paragraph. *Journal of Experimental Psychology: General*. [[pdf](https://talboger.github.io/files/Boger_Franconeri_JEPG_2024.pdf)]
 * Li, Y., Wang, Y., **Boger, T.**, Smith, K. A., Gershman, S. J., & Ullman, T. D. (2023). An approximate representation of objects underlies physical reasoning. *Journal of Experimental Psychology: General*. [[pdf](https://talboger.github.io/files/Li_etal_JEPG_2023.pdf)]
 * **Boger, T.** & Ullman, T. (2023). What is "where": Physical reasoning informs object location. *Open Mind*, *7*, 130-140. [[pdf](https://talboger.github.io/files/BogerUllman_OpenMind_2023.pdf)]
 * Hafri, A. \*, **Boger, T.** \*, & Firestone, C. (2022). Melting ice with your mind: Representational momentum for physical states. *Psychological Science*, *33*(5), 725-735. [[pdf](https://talboger.github.io/files/HafriBogerFirestone_PsychScience_2022.pdf)] (\* co-first authors)
