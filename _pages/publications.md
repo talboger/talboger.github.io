@@ -16,6 +16,8 @@ Journal articles and refereed conference proceedings
 
 Conference presentations
 ======
+* **Boger, T.** & Firestone, C. (2024). The psychophysics of style. Poster presented at the annual meeting of the *Vision Sciences Society*, 5/18/2024, St. Pete Beach, FL.
+* Franconeri, S. L. & **Boger, T.** (2024). When processing relationships, visual processing capacity is far less than four. Talk given at the annual meeting of the *Vision Sciences Society*, 5/18/2024, St. Pete Beach, FL.
 * Hafri, A., **Boger, T.**, & Firestone, C. (2022). Remembering the future: Representational momentum for physical states. Talk given at the annual meeting of the *(European) Society for Philosophy & Psychology*, 7/21/2022, Milan, Italy.
 * **Boger, T.** & Keil, F. C. (2022). Mechanism influences intuitive object complexity. Talk given at the annual meeting of the *(European) Society for Philosophy & Psychology*, 7/19/2022, Milan, Italy.
 * **Boger, T.** & Firestone, C. (2022). Automatic simulation of unseen physical events. Poster presented at the annual meeting of the *Vision Sciences Society*, 5/17/2022, St. Pete Beach, FL.
