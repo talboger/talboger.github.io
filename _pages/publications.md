@@ -7,8 +7,8 @@ author_profile: true
 Journal articles and refereed conference proceedings
 ======
 
-* **Boger, T.** & Franconeri, S. L. (In press). Reading a graph is like reading a paragraph. *Journal of Experimental Psychology: General*. [[pdf](https://talboger.github.io/files/Boger_Franconeri_JEPG_2024.pdf)]
-* Li, Y., Wang, Y., **Boger, T.**, Smith, K. A., Gershman, S. J., & Ullman, T. D. (2023). An approximate representation of objects underlies physical reasoning. *Journal of Experimental Psychology: General*. [[pdf](https://talboger.github.io/files/Li_etal_JEPG_2023.pdf)]
+* **Boger, T.** & Franconeri, S. L. (2024). Reading a graph is like reading a paragraph. *Journal of Experimental Psychology: General*. *153*(7), 1699-1704. [[pdf](https://talboger.github.io/files/Boger_Franconeri_JEPG_2024.pdf)]
+* Li, Y., Wang, Y., **Boger, T.**, Smith, K. A., Gershman, S. J., & Ullman, T. D. (2023). An approximate representation of objects underlies physical reasoning. *Journal of Experimental Psychology: General*. *152*(11), 3074-3086. [[pdf](https://talboger.github.io/files/Li_etal_JEPG_2023.pdf)]
 * **Boger, T.** & Ullman, T. (2023). What is "where": Physical reasoning informs object location. *Open Mind*, *7*, 130-140. [[pdf](https://talboger.github.io/files/BogerUllman_OpenMind_2023.pdf)]
 * Hafri, A. \*, **Boger, T.** \*, & Firestone, C. (2022). Melting ice with your mind: Representational momentum for physical states. *Psychological Science*, *33*(5), 725-735. [[pdf](https://talboger.github.io/files/HafriBogerFirestone_PsychScience_2022.pdf)] (\* co-first authors)
 * **Boger, T.**, Most, S. B., & Franconeri, S. L. (2021, October). Jurassic Mark: Inattentional Blindness for a Datasaurus Reveals that Visualizations are Explored, not Seen. In *2021 IEEE Visualization Conference (VIS)* (pp. 71-75). IEEE. [[pdf](https://talboger.github.io/files/BogerMostFranconeri_VIS_2021.pdf)] (**Awarded best short paper**.)
