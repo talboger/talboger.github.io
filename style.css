@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background: #1B2856; /* was 1f134a before */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh; /* full viewport */
+  background: #1B2856;
+}
+
+.intro h1 {
+  font-size: 5.5rem;
+  margin-bottom: 2rem;
+  color: #b8b6bf;
+  font-family: "lexend-zetta";
+  letter-spacing: 0.5rem;
+  text-indent: 0.5rem;
+  text-align: center;
+}
+
+
+.intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+  color: #b8b6bf;
+}
+
+/* Button group styling */
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: "montserrat";
+  transition: background 0.3s ease;
+  border: 0.2rem solid #b8b6bf;
+}
+
+.btn:hover {
+  background: #BCA330;
+}
+
+a {
+  color: #BCA330;
+}
+
+/* Sections styling */
+section {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  font-family: "montserrat";
+  font-size: 1.2rem;
+  color: #b8b6bf;
+  border-radius: 1rem;
+  border-left: 0.2rem solid #BCA330;
+  border-right: 0.2rem solid #BCA330;
+  margin-top: 5rem;
+  text-align: justify;
+}
+
+#equal {
+  font-size: 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #BCA330;
+  letter-spacing: 0.4rem;
+  text-indent: 0.4rem;
+}
+
+section h3 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  padding-left: 1.2rem;
+  list-style-position: outside;
+}
+
+/* for the sub-list award */
+section ul li ul {
+  margin-left: 2rem;
+  list-style: none;
+}
+
+section ul li ul li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem; /* for the arrow shape space */
+}
+
+section ul li ul li::before {
+  content: "↳";       /* ↪ */
+  white-space: pre;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #BCA330;
+  font-weight: bold;
+}
+
+/* Footer or bottom spacing */
+footer {
+  height: 4rem;
+}
+
+/* Container for typed text animatino */
+.typing-effect {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#typed-text-description {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  min-height: 3rem;
+  font-family: 'lexend-zetta';
+  font-size: 1.5rem;
+  color: #BCA330;
+}
+
+
+
+
+/* font used for title */
+.lexend-zetta-<uniquifier> {
+  font-family: "Lexend Zetta", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* font used elsewhere */
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+/* icons row container */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;               /* space between icons */
+  margin-top: 1rem;        /* spacing above the icons row */
+}
+
+/* icon links */
+.icon {
+  text-decoration: none;
+  color: #b8b6bf;          /* matches your current text color */
+  font-size: 1.5rem;       /* enlarge or shrink icons */
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #BCA330;
+}
+
+.icon:hover .bluesky-icon {
+  filter: none;
+}
+
+
+.scroll-down {
+  display: inline-block;
+  margin-top: 5rem;
+  text-decoration: none;
+  color: #b8b6bf;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.scroll-down:hover {
+  color: #BCA330;
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  background: url("images/vangogh.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* The "darkening" overlay goes in the ::after pseudo-element */
+.intro::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; left:0; right:0; bottom:0 */
+  background-color: #1B2856;
+  opacity: 0.90;
+  z-index: 1;
+}
+
+/* Ensure the text and other child elements sit on top of the overlay */
+.intro > * {
+  position: relative;
+  z-index: 2;
+}
+
+.about-pic {
+  float: left;
+  width: 15rem;
+  height: auto;
+  border-radius: 1rem;
+  margin: 1rem 1.5rem 0.5rem 0;
+}
+
+
+/* for mobile use! */
+@media screen and (orientation: portrait) {
+  .intro h1 {
+    font-size: 10rem;
+    letter-spacing: 0.2rem;
+    text-indent: 0;
+  }
+
+  .btn-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 20rem;
+    font-size: 2rem;
+    margin: 0.5rem auto;
+  }
+
+  .intro p {
+    margin-top: 5rem;
+    font-size: 2.4rem;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  .typing-effect {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #typed-text-description {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    min-height: 10rem;
+    font-family: 'lexend-zetta';
+    font-size: 3rem;
+    color: #BCA330;
+    white-space: normal;
+    overflow-wrap: break-word;
+    margin-bottom: 3rem;
+  }
+
+  .scroll-down {
+    display: inline-block;
+    margin-top: 5rem;
+    text-decoration: none;
+    color: #b8b6bf;
+    font-size: 3rem;
+    transition: color 0.3s ease;
+  }
+
+  section {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    font-family: "montserrat";
+    font-size: 2.4rem;
+    color: #b8b6bf;
+    border-radius: 1rem;
+    border-left: 0.2rem solid #BCA330;
+    border-right: 0.2rem solid #BCA330;
+    margin-top: 5rem;
+    text-align: left;
+  }
+
+  #equal {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #BCA330;
+    letter-spacing: 0.4rem;
+    text-indent: 0.4rem;
+  }
+
+  section h3 {
+    font-weight: normal;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  section ul li ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 3rem; 
+  }
+
+  .about-pic {
+    display: block;
+    float: none;
+    width: 80%;
+    height: auto;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+  }
+
+
+}
