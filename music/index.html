@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intro Psych Music Lecture - Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Material+Symbols+Rounded" rel="stylesheet">
+  <style>
+    :root{
+    --bg:#1B2856;
+    --card:#121833;
+    --card-2:#0f1530;
+    --text:#e8eeff;
+    --muted:#b7c3ffcc;
+    --accent:#6ea8ff;
+    --accent-2:#7ff2c6;
+    --border:#BCA330;
+    --correct:#1db954;
+    --incorrect:#ff5c7a;
+    --shadow: 0 10px 30px rgba(0,0,0,.35);
+    --radius: 18px;
+    }
+
+
+    * { box-sizing: border-box }
+    html,body { height: 100% }
+
+
+    body{
+    margin:0; font-family:'Montserrat', sans-serif;
+    background: radial-gradient(1200px 600px at 10% -10%, #1c2655 0%, transparent 60%),
+    radial-gradient(900px 600px at 110% 0%, #1d3c79 0%, transparent 60%),
+    var(--bg);
+    color: var(--text);
+    display:flex; align-items:center; justify-content:center; padding: 28px;
+    }
+
+
+    .app{ width: min(940px, 100%); }
+
+
+    .card{
+    background: linear-gradient(180deg, var(--card) 0%, var(--card-2) 100%);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(18px, 3vw, 32px);
+    border: 1.5px solid var(--border);
+    font-family:'Montserrat', sans-serif;
+    }
+
+
+    .header{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px; }
+    .title{ font-size: clamp(22px, 2.6vw, 32px); font-weight:800; letter-spacing:.2px }
+    .subtitle{ color: var(--muted); font-weight:600 }
+
+
+    .progressbar{ height:10px; background:rgba(255,255,255,.09); border-radius:999px; overflow:hidden }
+    .progress{ height:100%; width:0%; background:linear-gradient(90deg, var(--accent), var(--accent-2)); transition:width .4s cubic-bezier(.2,.7,.2,1) }
+
+    a:link {
+      color: #BCA330;
+      background-color: transparent;
+    }
+
+
+    .audioWrap{ background:#0e1430; border-radius:16px; padding:18px; border:1.5px solid var(--border); }
+    audio{ width:100%; filter:drop-shadow(0 4px 10px rgba(0,0,0,.15)); }
+
+
+    .grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:18px; }
+
+
+    .btn{
+    position:relative; display:flex; align-items:center; justify-content:center; gap:10px;
+    padding:16px 18px; border-radius:16px; cursor:pointer; border:0; color:#0a0e1f;
+    font-family:'Montserrat', sans-serif; font-weight:800; letter-spacing:.3px; text-transform:capitalize; font-size:16px;
+    background:#eaf1ff; box-shadow:0 2px 2px rgba(77,132,255,.25), inset 0 -2px 0 rgba(0,0,0,.15);
+    transition:transform .08s ease, box-shadow .2s ease, filter .2s ease;
+    overflow:hidden; user-select:none; -webkit-tap-highlight-color:transparent;
+    }
+
+
+    .btn span.m{ font-family:'Material Symbols Rounded'; font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 24; font-size:20px }
+    .btn:hover{ transform:translateY(-1px); box-shadow:0 4px 4px rgba(77,132,255,.33) }
+    .btn:active{ transform:translateY(0) scale(.98) }
+    .btn[disabled]{ opacity:.6; pointer-events:none; filter:grayscale(.4) }
+
+
+    .elevated{ background:linear-gradient(180deg,#eef4ff 0%,#dfe9ff 100%); border:1px solid rgba(10,14,31,.07); }
+
+
+    .btn .ripple{ position:absolute; border-radius:999px; transform:scale(0); animation:ripple .6s ease-out; background:rgba(10,14,31,.2); }
+    @keyframes ripple{ to{ transform:scale(12); opacity:0 } }
+
+
+    .pill{ display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; font-weight:700; font-size:12px; letter-spacing:.3px; font-family:'Montserrat', sans-serif; }
+    .pill.correct{ background:rgba(29,185,84,.14); color:#7dffb1; border:1px solid rgba(29,185,84,.25) }
+    .pill.incorrect{ background:rgba(255,92,122,.10); color:#ffb4c2; border:1px solid rgba(255,92,122,.22) }
+
+
+    .feedback{ margin-top:14px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; font-family:'Montserrat', sans-serif; }
+    .explain{ color:var(--muted) }
+
+
+    .stack{ display:flex; gap:10px; flex-wrap:wrap }
+
+
+    .ghost{ background:transparent; color:var(--text); border:1px dashed rgba(255,255,255,.18); }
+
+
+    .center{ text-align:center }
+    .dim{ color:var(--muted) }
+
+
+    .screen{ display:none }
+    .screen.active{ display:block }
+
+
+    .intro .title{ font-size:clamp(28px,4vw,44px) }
+
+
+    .footer{ display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:18px; color:var(--muted); font-family:'Montserrat', sans-serif; }
+    </style>
+</head>
+<body>
+  <main class="app">
+    <!-- INTRO SCREEN -->
+    <section id="intro" class="screen intro active card">
+      <div class="header">
+        <div>
+          <div class="title">A short demo for Tuesday's lecture</div>
+        </div>
+      </div>
+      <p style="font-size: 15px; line-height: 1.6">
+        On Tuesday, we'll talk about the <strong>psychology of <i>music</i></strong>. To give you a little taste of what we'll talk about, I've prepared this short demo.
+        <br><br>
+        In what follows, you'll hear 8 short audio clips gathered from different cultures. There are 4 'types' of songs you'll hear: <em>dance</em>, <em>healing</em>, <em>love</em>, and <em>lullaby</em>. For each clip you hear, you'll have to guess which type of song it is (i.e., did you just hear a clip from a dance song, a healing song, a love song, or a lullably?).
+        <br><br>
+        The music is sourced from the <a href="https://www.themusiclab.org/nhs">Natural History of Song</a>, which we'll discuss on Tuesday! As you go through this demo, feel free to replay audio as needed. After each guess, you'll see whether you were right.
+      </p>
+
+      <div class="stack" style="margin-top: 14px">
+        <button class="btn elevated" id="startBtn"><span class="m">play_circle</span> Start the demo</button>
+      </div>
+
+    </section>
+
+    <!-- GAME SCREEN -->
+    <section id="game" class="screen card">
+      <div class="header">
+        <div>
+          <div class="subtitle">Round <span id="roundNow">1</span> of <span id="roundTotal">8</span></div>
+          <div class="title">What kind of song is this?</div>
+        </div>
+        <div style="min-width:180px; flex: 1; max-width: 340px;">
+          <div class="progressbar"><div id="progress" class="progress"></div></div>
+        </div>
+      </div>
+
+      <div class="audioWrap">
+        <audio id="player" controls preload="metadata"></audio>
+      </div>
+
+      <div class="grid" id="choices">
+        <!-- Buttons injected here -->
+      </div>
+
+      <div id="feedback" class="feedback" style="display:none">
+        <div class="stack">
+          <span id="pill" class="pill">&nbsp;</span>
+          <span id="correctAns" class="pill ghost" title="Ground truth">&nbsp;</span>
+        </div>
+        <div id="explain" class="explain"></div>
+      </div>
+
+      <div class="stack" style="margin-top: 12px">
+        <button class="btn ghost" id="replayBtn"><span class="m">replay</span> Replay</button>
+        <button class="btn elevated" id="nextBtn" style="display:none"><span class="m">navigate_next</span> Next</button>
+      </div>
+
+      <div class="footer">
+        <div>Score: <strong id="scoreNow">0</strong> / <span id="scoreMax">8</span></div>
+      </div>
+    </section>
+
+    <!-- END SCREEN -->
+    <section id="end" class="screen end card">
+      <h2>Great job!</h2>
+      <p class="score">Your score: <span id="finalScore">0</span> / <span id="finalMax">8</span></p>
+      <div class="notes">
+        <p>If you were just guessing every time, you'd expect to get 2 / 8 correct. Did you do better than that? If so, why? We'll talk about it in class on Tuesday!</p>
+        <p>See you then!</p>
+      </div>
+      <div class="stack" style="margin-top: 14px">
+        <button class="btn ghost" id="backIntro"><span class="m">home</span> Back to intro</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ==== CONFIGURATION ======================================================
+    // Categories (folders) and human‑readable labels
+    const CATEGORIES = [
+      { key: 'dance',   label: 'Dance',   icon: 'celebration' },
+      { key: 'healing', label: 'Healing', icon: 'spa' },
+      { key: 'love',    label: 'Love',    icon: 'favorite' },
+      { key: 'lullaby', label: 'Lullaby', icon: 'bedtime' }
+    ];
+
+    // Two files in each folder: 01.mp3 and 02.mp3
+    // Paths are relative to where this HTML file lives.
+    function buildAllTracks(){
+      const BASE_PATH = 'stimuli'; // set to '' if folders sit next to this HTML file
+      const list = [];
+      for (const c of CATEGORIES){
+        for (const id of ['01','02']){
+          const path = `${BASE_PATH}/${c.key}/${id}.mp3`;
+          list.push({ src: path, answer: c.key });
+        }
+      }
+      return list;
+    }
+
+    // Optional: per‑track metadata / instructor notes — edit freely
+    // key = exact file path, value = string shown after the student answers
+    const TRACK_INFO = {
+      'stimuli/dance/01.mp3': 'From: Gourara, North Africa.',
+      'stimuli/dance/02.mp3': 'From: Ojibwa, Arctic & Subarctic.',
+      'stimuli/healing/01.mp3': 'From: Otavalo Quichua, Central Andes.',
+      'stimuli/healing/02.mp3': 'From: Meratus, Southeast Asia.',
+      'stimuli/love/01.mp3': 'From: Navajo, Southwest & Basin.',
+      'stimuli/love/02.mp3': 'From: Fulani, Western Africa.',
+      'stimuli/lullaby/01.mp3': 'From: Saami, Scandinavia.',
+      'stimuli/lullaby/02.mp3': 'From: Guarani, Eastern South America.'
+    };
+
+    // ==== STATE ==============================================================
+    const state = {
+      deck: [],
+      index: 0,
+      score: 0,
+      answered: false
+    };
+
+    // ==== UTILITIES ==========================================================
+    function shuffle(a){
+      // Fisher–Yates shuffle
+      for (let i = a.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function $(sel){ return document.querySelector(sel); }
+
+    function setScreen(id){
+      for (const el of document.querySelectorAll('.screen')) el.classList.remove('active');
+      $("#"+id).classList.add('active');
+    }
+
+    function setProgress(){
+      const pct = (state.index / state.deck.length) * 100;
+      $('#progress').style.width = pct + '%';
+      $('#roundNow').textContent = Math.min(state.index + 1, state.deck.length);
+      $('#roundTotal').textContent = state.deck.length;
+      $('#scoreNow').textContent = state.score;
+      $('#scoreMax').textContent = state.deck.length;
+    }
+
+    function ripple(e){
+      const btn = e.currentTarget;
+      const r = document.createElement('span'); r.className = 'ripple';
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      r.style.width = r.style.height = size + 'px';
+      r.style.left = (e.clientX - rect.left - size/2) + 'px';
+      r.style.top = (e.clientY - rect.top - size/2) + 'px';
+      btn.appendChild(r); setTimeout(()=> r.remove(), 620);
+    }
+
+    function keyToggleSpace(e){
+      if (e.code === 'Space' && !['INPUT','TEXTAREA','BUTTON'].includes(document.activeElement.tagName)){
+        e.preventDefault();
+        const audio = $('#player');
+        if (audio.paused) audio.play(); else audio.pause();
+      }
+    }
+
+    // ==== GAME LOGIC =========================================================
+    function buildChoiceButtons(){
+      const container = $('#choices');
+      container.innerHTML = '';
+      for (const c of CATEGORIES){
+        const b = document.createElement('button');
+        b.className = 'btn elevated';
+        b.dataset.key = c.key;
+        b.innerHTML = `<span class="m">${c.icon}</span> ${c.label}`;
+        b.addEventListener('pointerdown', ripple);
+        b.addEventListener('click', () => choose(c.key));
+        container.appendChild(b);
+      }
+    }
+
+    function loadCurrent(){
+      const track = state.deck[state.index];
+      const audio = $('#player');
+      audio.src = track.src; // update source
+      audio.currentTime = 0;
+      audio.play().catch(()=>{/* autoplay may be blocked */});
+
+      // reset UI
+      state.answered = false;
+      $('#feedback').style.display = 'none';
+      $('#nextBtn').style.display = 'none';
+      for (const b of document.querySelectorAll('#choices .btn')) b.disabled = false;
+      setProgress();
+    }
+
+    function choose(choice){
+      if (state.answered) return;
+      state.answered = true;
+
+      const track = state.deck[state.index];
+      const correct = (choice === track.answer);
+      if (correct) state.score++;
+
+      // Lock buttons
+      for (const b of document.querySelectorAll('#choices .btn')) b.disabled = true;
+
+      // Feedback UI
+      const pill = $('#pill');
+      pill.className = 'pill ' + (correct ? 'correct' : 'incorrect');
+      pill.textContent = correct ? 'Correct' : 'Incorrect';
+
+      const def = CATEGORIES.find(c => c.key === track.answer)?.label || track.answer;
+      const correctAns = $('#correctAns');
+      correctAns.textContent = `Answer: ${def}`;
+
+      const info = TRACK_INFO[track.src] || '—';
+      $('#explain').textContent = info;
+
+      $('#feedback').style.display = 'flex';
+      $('#nextBtn').style.display = 'inline-flex';
+    }
+
+    function next(){
+      state.index++;
+      if (state.index >= state.deck.length){
+        const a = $('#player');
+        a.pause();
+        a.currentTime = 0;
+
+        // end
+        $('#finalScore').textContent = state.score;
+        $('#finalMax').textContent = state.deck.length;
+
+        persistScore(state.score, state.deck.length);
+
+        setScreen('end');
+      } else {
+        loadCurrent();
+      }
+    }
+
+    function start(){
+      state.deck = shuffle(buildAllTracks());
+      state.index = 0; state.score = 0; state.answered = false;
+      setScreen('game');
+      buildChoiceButtons();
+      setProgress();
+      loadCurrent();
+    }
+
+    // ==== WIRE UP ============================================================
+    window.addEventListener('keydown', keyToggleSpace);
+    $('#startBtn').addEventListener('click', start);
+    $('#replayBtn').addEventListener('click', () => {
+      const a = $('#player'); a.currentTime = 0; a.play();
+    });
+    $('#nextBtn').addEventListener('click', next);
+    $('#backIntro').addEventListener('click', () => {
+      // stop any playing audio
+      const a = $('#player');
+      if (a) { a.pause(); a.currentTime = 0; }
+
+      // reset game state
+      state.deck = [];
+      state.index = 0;
+      state.score = 0;
+      state.answered = false;
+
+      // reset progress visuals
+      $('#progress').style.width = '0%';
+      $('#scoreNow').textContent = '0';
+      $('#roundNow').textContent = '0';
+
+      // show intro again
+      setScreen('intro');
+    });
+
+    // If you want to auto‑start (skip intro), uncomment:
+    // start();
+
+    const RESULTS_ENDPOINT = 'https://www.tb.perceptionresearch.org/intro_psych/music_lecture/save-results.php';
+
+    function persistScore(score, total){
+      const data = new URLSearchParams({
+        score: String(score),
+        total: String(total),
+        ts: new Date().toISOString(),
+        ua: navigator.userAgent
+      });
+
+      // Try a background-safe send first; fall back to fetch keepalive
+      const sent = navigator.sendBeacon && navigator.sendBeacon(RESULTS_ENDPOINT, data);
+      if (!sent){
+        fetch(RESULTS_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type':'application/x-www-form-urlencoded' },
+          body: data,
+          keepalive: true
+        }).catch(()=>{ /* non-blocking */ });
+      }
+    }
+  </script>
+</body>
+</html>
