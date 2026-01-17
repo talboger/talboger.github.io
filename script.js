@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   for (var i = 0; i < links.length; i++) {
     var href = links[i].getAttribute("href");
     // except intra-page links
-    if (href !== "#about" && href !== "#publications") {
+    if (href !== "#about" && href !== "#publications" && href !== "#teaching") {
       links[i].target = "_blank";
     }
   }
