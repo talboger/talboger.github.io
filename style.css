@@ -188,9 +188,15 @@ footer {
 
 /* icon links */
 .icon {
+  width: 2.5rem;         
+  height: 2.5rem;
+  display: inline-flex;  /* instead of inline */
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #b8b6bf;
   font-size: 1.5rem;
+  line-height: 1;        /* helps avoid baseline weirdness */
   transition: color 0.3s ease;
 }
 
