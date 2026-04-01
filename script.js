@@ -16,16 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
   // description phrases
   const phrases = [
     "how does the mind separate content from form?",
+    "how does randomness work in the mind?",
     "how do we see style?",
     "what does it mean for something to be complex?",
-    "how does randomness work in the mind?"
+    "can we 'see' high-level properties?",
   ];
 
   const to_italicize = [
     [[27, 33], [40, 43]], // content, form
+    [[9, 19]], // randomness
     [[14, 18]], // style
     [[38, 44]], // complex
-    [[9, 19]] // randomness
+    [[13, 33]],
   ] // to do: maybe automate for word search instead of manual index
 
   // description speeds

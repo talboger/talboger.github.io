@@ -188,7 +188,7 @@ footer {
 
 /* icon links */
 .icon {
-  width: 2.5rem;         
+  width: 2.5rem;
   height: 2.5rem;
   display: inline-flex;  /* instead of inline */
   align-items: center;
@@ -254,7 +254,6 @@ footer {
   height: auto;
   border-radius: 1rem;
   margin: 1rem 1.5rem 0.5rem 0;
-  filter: drop-shadow(-0.5rem -0.5rem 0.5rem #686e75);
 }
 
 
